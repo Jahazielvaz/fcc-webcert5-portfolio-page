@@ -7,14 +7,62 @@
     <link rel="stylesheet" href="./style.css">
   </head>
   <body>
-    <header style="text-align: center; font-size: 40px;">Welcome To My Portfolio Page</header>
+    <header id="main-header">
+      <section id="name-heading">
+        <p>Jahaziel Vazquez</p>
+        <p>Beast In The Making</p>
+      </section>
+
+      <nav id="navbar">
+        <a href="#welcome-section">Home</a>
+        <a href="#projects">Projects</a>
+        <a href="#signup">Log In/Sign Up</a>
+        <a id="profile-link" target="_blank" href="https://github.com/Jahazielvaz">Github</a>
+      </nav>
+    </header>
+    <!-- Welcome Section -->
+    <section id="welcome-section">
+      <h1>Welcome</h1>
+      <h2>Stay a while... Or don't.</h2>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects">
+      <h2>Portfolio</h2>
+      <a href="http://igniteandflourish.com/" target="_blank"><img class="project-tile" src="./images/ignite-and-flourish.png" alt="Image of ignite and flourish website"></a>
+    </section>
+
+    <section id="signup">
+      <form id="form" action="igniteandflourish.com" method="post">
+        <h2>Sign Up</h2><br>
+
+        <label for="name">Name:</label><br>
+        <input class="input" type="text" placeholder="John Doe" name="name" id="name"><br><br>
+
+        <label for="email">Email:</label><br>
+        <input class="input" type="email" id="email" name="email" placeholder="john.doe@mail.com"><br><br>
+
+        <label for="password">Password:</label><br>
+        <input class="input" type="password" id="password" name="password" placeholder="2ieds98"> <br><br>
+
+        <label for="password2">Re-enter Password:</label><br>
+        <input class="input" type="password" id="password2" name="password2" placeholder="2ieds98"><br><br>
+
+        <input type="submit" id="submit" placeholder="Submit">
+      </form>
+    </section>
     <footer>
       <section class="colors-container">
+        <!-- Buttons -->
         <div class="colors" id="col1">Buttons</div>
+        <!-- Headers/Footers -->
         <div class="colors" id="col2">Headers/Footers</div>
+        <!-- Info Boards -->
         <div class="colors" id="col3">info boards</div>
-        <div class="colors" id="col4"></div>
-        <div class="colors" id="col5"></div>
+        <!-- Backgrounds -->
+        <div class="colors" id="col4">Backgrounds</div>
+        <!-- Other Backgrounds -->
+        <div class="colors" id="col5">Other Backgrounds</div>
       </section>
     </footer>
     <script src="./index.js"></script>

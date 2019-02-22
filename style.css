@@ -6,6 +6,118 @@
 
 }
 
+a{
+  text-decoration: none;
+  color: #eee;
+}
+
+a:hover{
+  color: #fff;
+  transition: .7s;
+}
+
+#main-header{
+  background: rgba(0, 53, 74);
+  color: white;
+  padding: 10px;
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  box-shadow: 3px 0 5px 5px rgba(100, 153, 174, .7);
+}
+
+#name-heading{
+  font-size: 20px;
+  font-weight: bold;
+
+}
+
+#navbar{
+  text-align: center;
+  line-height: 50px;
+}
+
+#navbar a{
+  margin: 0 10px;
+}
+
+#welcome-section{
+  text-align: center;
+  padding: 20px;
+  background: url('https://www.robertharding.com/blog/wp-content/uploads/2017/11/1179-1382.jpg')center center no-repeat;
+  background-size: cover;
+  height: 100vh;
+  color: white;
+  margin-top: 70px;
+}
+
+#welcome-section h1{
+  font-size: 40px;
+}
+
+#welcome-section h2{
+  font-size: 25px;
+}
+
+#projects{
+  text-align: center;
+  background: rgba(134, 202, 186);
+  padding: 50px;
+}
+
+#projects h2{
+  text-transform: uppercase;
+
+}
+
+.project-tile{
+  width: 500px;
+  height: 400px;
+  margin: 50px auto;
+  display: inline-block;
+  box-shadow: 2px 2px 5px 10px rgba(0, 0, 0, .3);
+}
+
+#signup{
+  height: 100vh;
+}
+
+#form{
+  box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, .3);
+  margin: 100px auto;
+  padding: 30px;
+  width: 300px;
+  border-radius: 20px;
+  background: url('https://vickyflipfloptravels.com/wp-content/uploads/2015/10/IMG_4381.jpg')center center no-repeat;
+  background-size: cover;
+  font-size: 20px;
+  color: white;
+
+}
+
+.input{
+  box-shadow: 3px 3px 2px 4px rgba(0, 0, 0, .3);
+  width: 97%;
+  height: 35px;
+  border-radius: 5px;
+  margin-top: 10px;
+  padding: 0 5px;
+  font-size: 15px;
+}
+
+#submit{
+  box-shadow: 3px 3px 2px 4px rgba(0, 0, 0, .3);
+  width: 100%;
+  height: 35px;
+  border-radius: 5px;
+  margin-top: 10px;
+  padding: 0 5px;
+  background: rgba(0, 226, 117);
+}
+
 footer{
   padding: 20px;
   border-top: 2px solid black;
@@ -22,24 +134,26 @@ footer{
   margin-left: 30px;
 }
 
-.colors{
-  height: 50px;
-}
 
+/* Buttons */
 #col1{
   background: rgba(0, 226, 117);
 }
 
+/* Headers/Footers */
 #col2{
   background: rgba(0, 53, 74);
 }
 
+/* Info Boards */
 #col3{
   background: rgba(0, 166, 173);
 }
 
+/*  Backgrounds  */
 #col4{
   background: rgba(134, 202, 186);
 }
 
+/* Other Backgrounds */
 #col5{background: rgba(136,211, 235);}
