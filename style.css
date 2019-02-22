@@ -44,6 +44,18 @@ a:hover{
   margin: 0 10px;
 }
 
+
+#nav2{
+  border: 2px solid red;
+  position: fixed;
+  background: black;
+  width: 0;
+}
+
+#nav2 a{
+  color: white;
+}
+
 #welcome-section{
   text-align: center;
   padding: 20px;
