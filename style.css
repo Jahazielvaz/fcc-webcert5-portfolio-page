@@ -6,6 +6,11 @@
 
 }
 
+svg{
+  cursor: grab;
+
+}
+
 a{
   text-decoration: none;
   color: #eee;
@@ -21,7 +26,7 @@ a:hover{
   color: white;
   padding: 10px;
   display: grid;
-  grid-template-columns: 2fr 3fr;
+  grid-template-columns:1fr 3fr 3fr;
   position: fixed;
   top: 0;
   left: 0;
@@ -32,12 +37,14 @@ a:hover{
 #name-heading{
   font-size: 20px;
   font-weight: bold;
-
+  text-align: center;
 }
 
 #navbar{
   text-align: center;
   line-height: 50px;
+  overflow: hidden;
+  display: block;
 }
 
 #navbar a{
@@ -46,14 +53,30 @@ a:hover{
 
 
 #nav2{
-  border: 2px solid red;
   position: fixed;
-  background: black;
-  width: 0;
+  top: 0;
+  left: 0;
+  background: rgba(0, 166, 173);
+  width: 300px;
+  height: 100%;
+  text-align: center;
+  display: none;
 }
 
-#nav2 a{
+#x{
   color: white;
+  text-align: right;
+  margin: 20px;
+  font-size: 25px;
+  cursor: grab;
+}
+
+.nav2-link{
+  color: white;
+  line-height: 40px;
+  font-size: 25px;
+  display: block;
+  border-bottom: 2px solid white;
 }
 
 #welcome-section{
@@ -61,7 +84,7 @@ a:hover{
   padding: 20px;
   background: url('https://www.robertharding.com/blog/wp-content/uploads/2017/11/1179-1382.jpg')center center no-repeat;
   background-size: cover;
-  height: 100vh;
+  height: 281px;
   color: white;
   margin-top: 70px;
 }
@@ -93,8 +116,19 @@ a:hover{
   box-shadow: 2px 2px 5px 10px rgba(0, 0, 0, .3);
 }
 
-#signup{
+#about{
   height: 100vh;
+  background: #222;
+  font-size: 45px;
+  color: white;
+  text-align: center;
+  line-height: 100vh;
+}
+
+#signup{
+
+  background: #555;
+  padding: 40px;
 }
 
 #form{
@@ -144,6 +178,28 @@ footer{
   grid-column-gap: 10px;
   max-width: 290px;
   margin-left: 30px;
+}
+
+@media (max-width: 780px ){
+  .main-header{
+    display: none;
+  }
+
+  #navbar{
+    display: none;
+  }
+
+  #welcome-section{
+    text-align: center;
+    padding: 20px;
+    background: url('https://www.robertharding.com/blog/wp-content/uploads/2017/11/1179-1382.jpg')center center no-repeat;
+    background-size: cover;
+    height: 281px;
+    color: white;
+    margin-top: 40px;
+  }
+
+
 }
 
 

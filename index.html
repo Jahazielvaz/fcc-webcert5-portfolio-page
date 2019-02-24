@@ -8,74 +8,71 @@
   </head>
   <body>
     <header id="main-header">
-      <section id="name-heading">
+      <svg onclick="openSlide()" width="30px" height="30px">
+        <path d="M0, 5 30 5" stroke="#fff" stroke-width="5px" />
+        <path d="M0, 15 30 15" stroke="#fff" stroke-width="5px" />
+        <path d="M0, 25 30 25" stroke="#fff" stroke-width="5px" />
+      </svg>
+
+      <section class="main-header" id="name-heading">
+        <header>Name Heading</header>
         <p>Jahaziel Vazquez</p>
         <p>Beast In The Making</p>
       </section>
 
-      <nav id="navbar">
-        <a href="#welcome-section">Home</a>
-        <a href="#projects">Projects</a>
-        <a href="#signup">Log In/Sign Up</a>
-        <a id="profile-link" target="_blank" href="https://github.com/Jahazielvaz">Github</a>
-      </nav>
+      <div >
+        <nav class="main-header" id="navbar">
+          <a href="#welcome-section">Home</a>
+          <a href="#projects">Projects</a>
+          <a href="#signup">Log In/Sign Up</a>
+          <a id="profile-link" target="_blank" href="https://github.com/Jahazielvaz">Github</a>
+        </nav>
+      </div>
     </header>
 
-    <!-- Hamburger Nav -->
     <nav id="nav2">
-      <svg width="30px" height="30px" style="border: 2px solid red;">
-        <path d="M0, 5 30 5" />
-      </svg>
-      <a href="#welcome-section">Home</a>
-      <a href="#projects">Projects</a>
-      <a href="#signup">Log In/Sign Up</a>
-      <a id="profile-link" target="_blank" href="https://github.com/Jahazielvaz">Github</a>
+      <p id="x" onclick="closeSlide()">X</p>
+
+      <a class="nav2-link" href="#welcome-section">Home</a>
+      <a class="nav2-link" href="#projects">Projects</a>
+      <a class="nav2-link" href="#signup">Log In/Sign Up</a>
+      <a class="nav2-link" id="profile-link" target="_blank" href="https://github.com/Jahazielvaz">Github</a>
     </nav>
     <!-- Welcome Section -->
-    <section id="welcome-section">
-      <h1>Welcome</h1>
-      <h2>Stay a while... Or don't.</h2>
-    </section>
-
-    <!-- Projects -->
-    <section id="projects">
-      <h2>Portfolio</h2>
-      <a href="http://igniteandflourish.com/" target="_blank"><img class="project-tile" src="./images/ignite-and-flourish.png" alt="Image of ignite and flourish website"></a>
-    </section>
-
-    <section id="signup">
-      <form id="form" action="igniteandflourish.com" method="post">
-        <h2>Sign Up</h2><br>
-
-        <label for="name">Name:</label><br>
-        <input class="input" type="text" placeholder="John Doe" name="name" id="name"><br><br>
-
-        <label for="email">Email:</label><br>
-        <input class="input" type="email" id="email" name="email" placeholder="john.doe@mail.com"><br><br>
-
-        <label for="password">Password:</label><br>
-        <input class="input" type="password" id="password" name="password" placeholder="2ieds98"> <br><br>
-
-        <label for="password2">Re-enter Password:</label><br>
-        <input class="input" type="password" id="password2" name="password2" placeholder="2ieds98"><br><br>
-
-        <input type="submit" id="submit" placeholder="Submit">
-      </form>
-    </section>
-    <footer>
-      <section class="colors-container">
-        <!-- Buttons -->
-        <div class="colors" id="col1">Buttons</div>
-        <!-- Headers/Footers -->
-        <div class="colors" id="col2">Headers/Footers</div>
-        <!-- Info Boards -->
-        <div class="colors" id="col3">info boards</div>
-        <!-- Backgrounds -->
-        <div class="colors" id="col4">Backgrounds</div>
-        <!-- Other Backgrounds -->
-        <div class="colors" id="col5">Other Backgrounds</div>
+    <main id="main-doc">
+      <section class="main-section" id="welcome-section">
+        <h1>Welcome</h1>
+          <h2>Good to see you here</h2>
+          <h2>Stay a while... Or don't.</h2>
       </section>
-    </footer>
+
+      <!-- Projects -->
+      <section class="main-section" id="projects">
+        <header>Projects</header>
+        <a href="http://igniteandflourish.com/" target="_blank"><img class="project-tile" src="./images/ignite-and-flourish.png" alt="Image of ignite and flourish website"></a>
+      </section>
+
+
+      <section class="main-section" id="signup">
+        <form id="form" action="igniteandflourish.com" method="post">
+          <header>Signup</header><br>
+
+          <label for="name">Name:</label><br>
+          <input class="input" type="text" placeholder="John Doe" name="name" id="name"><br><br>
+
+          <label for="email">Email:</label><br>
+          <input class="input" type="email" id="email" name="email" placeholder="john.doe@mail.com"><br><br>
+
+          <label for="password">Password:</label><br>
+          <input class="input" type="password" id="password" name="password" placeholder="2ieds98"> <br><br>
+
+          <label for="password2">Re-enter Password:</label><br>
+          <input class="input" type="password" id="password2" name="password2" placeholder="2ieds98"><br><br>
+
+          <input type="submit" id="submit" placeholder="Submit">
+        </form>
+      </main>
+      </section>
     <script src="./index.js"></script>
   </body>
 </html>
